@@ -29,8 +29,6 @@ const connectLivereload = require("connect-livereload");
     }, 100);
   });
 
-
-
 mongoose
   .connect("mongodb+srv://devmohamed:Z7MrLPdNymAWT8cS@cluster0.6bqei.mongodb.net/all-data?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {

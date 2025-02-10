@@ -1,13 +1,29 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/customerSchema');
-var moment = require('moment');
+
 const UserControllers = require('../controllers/userController');
 
 
 
+// level 2
+router.get('/', (req, res) => {
+    res.render('welcome');
+});
+
+router.get('/login', (req, res) => {
+    res.render('auth/login');
+});
+
+router.get('/signup', (req, res) => {
+    res.render('auth/signup');
+});
+
+
+
+
+
 // Get Request
-router.get('/', UserControllers.viewUsers);
+router.get('/home', UserControllers.viewUsers);
   
 router.get('/edit/:id', UserControllers.editUser);
   

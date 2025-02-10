@@ -47,7 +47,7 @@ const searchOnUsers = (req, res) => {
 const deleteUsers =  (req, res) => {
     User.deleteOne({_id: req.params.id}, req.body)
         .then(() => { 
-            res.redirect("/"); 
+            res.redirect("/home"); 
         })
         .catch((err) => {
             console.log(err);
@@ -57,7 +57,7 @@ const deleteUsers =  (req, res) => {
 const updateUsers = (req, res) => {
     User.updateOne({_id: req.params.id}, req.body)
         .then(() => {
-          res.redirect("/");
+          res.redirect("/home");
         })
         .catch((err) => {
           console.log(err);
@@ -72,7 +72,7 @@ res.render("user/add");
 const addNewUser = (req, res) => {
     User.create(req.body)
         .then(() => { 
-          res.redirect("/");
+          res.redirect("/home");
         })
         .catch((err) => {
           console.log(err);
