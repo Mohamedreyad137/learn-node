@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <script src="./js/color-modes.js"></script>
-        <link
-          rel="stylesheet"
-          href="./bootstrap-icons-1.10.5/font/bootstrap-icons.min.css"
-        />
-        <link rel="shortcut icon" href="./img/ali.png" type="image/x-icon">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta
-          name="author"
-          content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-        />
-        <meta name="generator" content="Hugo 0.112.5" />
-        <title>Home page</title>
+      <script src="./js/color-modes.js"></script>
+      <link
+        rel="stylesheet"
+        href="./bootstrap-icons-1.10.5/font/bootstrap-icons.min.css"
+      />
+      <link rel="shortcut icon" href="./img/ali.png" type="image/x-icon">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="" />
+      <meta
+        name="author"
+        content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+      />
+      <meta name="generator" content="Hugo 0.112.5" />
+      <title>Home page</title>
+  
+      <link href="./css/bootstrap.min.css" rel="stylesheet" />
     
-        <link href="./css/bootstrap.min.css" rel="stylesheet" />
-     
-        <!-- custom styles for dark&light mode -->
-        <link rel="stylesheet" href="./css/dark_light.css">
-    
-        <!-- Custom styles for this template -->
-        <link href="./css/sidebars.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./css/myStyle.css" />
+      <!-- custom styles for dark&light mode -->
+      <link rel="stylesheet" href="./css/dark_light.css">
+  
+      <!-- Custom styles for this template -->
+      <link href="./css/sidebars.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/myStyle.css" />
 </head>
 <style>
     /* Custom default button */
@@ -57,18 +57,18 @@
     <main class="px-3">
         <h1>Sign Up</h1>
 
-        <form class="text-start mx-auto mt-5" style="max-width: 22em;">
+        <form action="/signup" method="post" class="text-start mx-auto mt-5" style="max-width: 22em;">
           <div class="mb-3">
             <label for="exampleInputUsername" class="form-label">Username: </label>
-            <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
+            <input name="userName" type="text" class="form-control" id="exampleInputUsername">
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address: </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input  name="email"  type="email" class="form-control" id="exampleInputEmail1">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password: </label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input  name="password"  type="password" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
