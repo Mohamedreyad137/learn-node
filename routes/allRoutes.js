@@ -5,6 +5,7 @@ const UserControllers = require('../controllers/userController');
 const AuthUser = require('../models/authUser');
 const bcrypt = require('bcrypt');
 var jwt = require("jsonwebtoken");
+app.use(cookieParser());
 
 
 // level 2
